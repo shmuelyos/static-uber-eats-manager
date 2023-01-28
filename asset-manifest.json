@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static-uber-eats-manager/static/css/main.9ead77ff.css",
-    "main.js": "/static-uber-eats-manager/static/js/main.abf460e0.js",
+    "main.js": "/static-uber-eats-manager/static/js/main.371ea72f.js",
     "index.html": "/static-uber-eats-manager/index.html",
     "main.9ead77ff.css.map": "/static-uber-eats-manager/static/css/main.9ead77ff.css.map",
-    "main.abf460e0.js.map": "/static-uber-eats-manager/static/js/main.abf460e0.js.map"
+    "main.371ea72f.js.map": "/static-uber-eats-manager/static/js/main.371ea72f.js.map"
   },
   "entrypoints": [
     "static/css/main.9ead77ff.css",
-    "static/js/main.abf460e0.js"
+    "static/js/main.371ea72f.js"
   ]
 }
