@@ -8,7 +8,7 @@ import AuthContextProvider from "./contexts/AuthContext";
 import OrderContextProvider from "./contexts/OrderContext";
 import RestaurantContextProvider from "./contexts/RestaurantContext";
 import {Amplify} from "aws-amplify";
-import awsConfig from './aws-exports';
+import awsconfig from './aws-exports';
 
 // const isLocalhost = Boolean(
 //     window.location.hostname === "localhost" ||
@@ -54,7 +54,15 @@ import awsConfig from './aws-exports';
 // Amplify.configure(updatedAwsConfig);
 
 
-Amplify.configure(awsConfig);
+awsconfig.oauth.redirectSignIn = window.location.origin
+awsconfig.oauth.redirectSignOut = window.location.origin
+// awsconfig.oauth.redirectSignIn = window.location.toString()
+// awsconfig.oauth.redirectSignOut = window.location.toString()
+
+
+console.log("\n\n ~~~~~~~~~~~~~~~~~~~~~ awsconfig ~~~~~~~~~~~~~~~~~~~~~ :", JSON.stringify(awsconfig,null,4))
+
+Amplify.configure(awsconfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
