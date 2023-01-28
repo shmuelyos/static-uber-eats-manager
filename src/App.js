@@ -1,13 +1,7 @@
 import {Image, Layout} from "antd";
 import SideMenu from '../src/components/SideMenu';
-import {Amplify} from "aws-amplify";
-// import awsExports from "./aws-exports";
 import {withAuthenticator} from '@aws-amplify/ui-react';
 import ProtectedRoutes from "./routes/ProtectedRoutes";
-import {Authenticator} from '@aws-amplify/ui-react';
-
-
-// global.subscription = {}
 
 const {Sider, Content, Footer} = Layout;
 
