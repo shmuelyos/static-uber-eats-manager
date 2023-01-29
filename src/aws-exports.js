@@ -22,8 +22,6 @@ const awsmobile = {
         ],
         "redirectSignIn": "http://localhost:3000",
         "redirectSignOut": "http://localhost:3000",
-        // "redirectSignIn": "http://localhost:3000,https://shmuelyos.github.io/static-uber-eats-manager",
-        // "redirectSignOut": "http://localhost:3000,https://shmuelyos.github.io/static-uber-eats-manager",
         "responseType": "code"
     },
     "federationTarget": "COGNITO_USER_POOLS",
