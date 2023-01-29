@@ -4,7 +4,6 @@ import RestaurantMenu from "../screens/RestaurantMenu";
 import CreateMenuItem from "../components/CreateMenuItem";
 import OrderHistory from "../screens/OrderHisotry";
 import EditMenuItem from "../components/EditMenuItem";
-import Login from "../screens/Login";
 import NewRestaurant from "../screens/NewRestaurant";
 import {Route, Routes} from "react-router-dom";
 import EditRestaurant from "../screens/EditRestaurant";
