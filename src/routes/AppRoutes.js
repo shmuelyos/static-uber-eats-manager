@@ -10,10 +10,6 @@ import EditRestaurant from "../screens/EditRestaurant";
 
 
 const AppRoutes = () => {
-    // const {restaurant} = useRestaurantContext()
-    // !restaurant ? <Navigate to="create-new-restaurant" replace/> :
-
-
     return (
             <Routes>
                 <Route path="/" element={<Orders/>}/>
@@ -24,8 +20,6 @@ const AppRoutes = () => {
                 <Route path="menu/edit" element={<EditMenuItem/>}/>
                 <Route path="order-history" element={<OrderHistory/>}/>
                 <Route path="edit-restaurant" element={<EditRestaurant/>}/>
-                {/*<Route path="settings" element={<Settings/>}/>*/}
-                <Route path="login" element={<Login/>}/>
             </Routes>
     );
 };
