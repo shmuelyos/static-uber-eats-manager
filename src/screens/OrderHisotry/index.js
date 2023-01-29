@@ -9,9 +9,9 @@ const OrderHistory = () => {
     const {restaurant, orders} = useOrderContext()
 
     useEffect(() => {
-        const lastOrder = orders?.[orders?.length - 1]
+        const lastOrder = orders?.[orders?.length - 1];
 
-        lastOrder?.status === "COMPLETED" ||  lastOrder?.status === "DECLINED" &&
+        (lastOrder?.status === "COMPLETED" ||  lastOrder?.status === "DECLINED") &&
         setHistoryOrders(prevOrders => [...prevOrders, lastOrder])
 
     }, [orders])
@@ -39,7 +39,7 @@ const OrderHistory = () => {
             title: "Delivery Address",
             dataIndex: "customerLocation",
             key: "customerLocation",
-            render: (customerLocation) => customerLocation.address
+            render: (customerLocation) => customerLocation?.address
         },
         {
             title: "Price",
